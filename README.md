@@ -1,2 +1,10 @@
-# acquiredResistance-
-Modeling the effect of acquired resistance on cancer therapy outcomes
+# Acquired Resistance
+The code ("ModelGrid.java") is developed using HAL platform(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007635). To use the code the following steps would work.
+
+Install HAL(https://github.com/MathOnco/HAL).
+Make a folder "ResistanceSymmetric" in the directory "C:\HAL-master".
+Copy all the files in the directory "C:\HAL-master\ResistanceSymmetric".
+Provide the "input_x1000_t14000.csv" file as input file in line 268.
+Set the output file name and directory in line 302.
+Set the parameter values in lines 194-204 and 255-256.
+Run "ModelGrid.java"
