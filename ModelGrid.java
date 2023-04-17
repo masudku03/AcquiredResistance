@@ -190,7 +190,7 @@ class ModelCell extends AgentSQ2D<ModelGrid> { //the agents
 
 public class ModelGrid extends AgentGrid2D<ModelCell> {//Grid to house the agents
     boolean dec, decOld; boolean AT = true; int N0, gCount, rCount, bCount, rs, K = 1;
-    double divFibro = 1.0; double dieFibro = 1.0; double drugFibro = 1.0; double alpFibro = 1.0;
+    double drugFibro = 1.0; double alpFibro = 1.0; //change one of these two to simulate impact of fibroblasts
     double divProb = 0.027;//base growth rate
     double divProbR = (1-0.3)*divProb;
     double dieProb = 0.3*divProb;//constant death rate
@@ -200,9 +200,9 @@ public class ModelGrid extends AgentGrid2D<ModelCell> {//Grid to house the agent
     double alpha = 1e-5;//Drug induced mutation probability (alpha) MPD
     double p = 0.9;//Probability of reversible drug induced mutation (p)
     double beta = 2*divProb;//0.9;//Reversion probability of RR-cells (beta) MPR
-    double divProbFibro = divFibro*divProb;
-    double divProbRFibro = divFibro*divProbR;
-    double dieProbFibro = dieFibro*dieProb;
+    double divProbFibro = divProb;
+    double divProbRFibro = divProbR;
+    double dieProbFibro = dieProb;
     double dieProbDFibro = drugFibro*dieProbD;
     double alphaFibro = alpFibro*alpha;
 
