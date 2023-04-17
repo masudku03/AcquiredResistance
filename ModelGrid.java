@@ -25,7 +25,7 @@ class ModelCell extends AgentSQ2D<ModelGrid> { //the agents
                     if (G.rng.Double() < G.divProb / (G.divProb + G.alpha*G.dieProbD)){
                         int options = G.MapEmptyHoodK(G.divHood,Xsq(),Ysq());//Checking the available potions in the neighbourhood
                         if (options > 0) {
-                            if (G.rng.Double() > G.dieProbD * G.GF.Get(Isq())) {//Decide whether does not die due to drug
+                            if (G.rng.Double() > G.dieProbD * G.GF.Get(Isq())) {//Decide whether does not die due to drug. Here, G.GF.Get(Isq()) = 0(treatment off) or 1(treatment on)
                                 int loc = G.rng.Int(options);//randomly choose where to put the new cell
                                 if(G.PopAt(G.divHood[loc])<G.K ){
                                     if(G.rng.Double() > G.epsilon){// if mutation does not occur
