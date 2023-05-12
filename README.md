@@ -1,5 +1,5 @@
 # Acquired Resistance
-The code ("ModelGrid.java") is developed using HAL platform(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007635). To use the code the following steps would work.
+The code ("ModelGrid.java") is developed using HAL platform(https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007635). To simulate the model following steps would work.
 
 1. Install HAL(https://github.com/MathOnco/HAL).
 2. Make a folder "ResistanceSymmetric" in the directory "C:\HAL-master".
